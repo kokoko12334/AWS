@@ -126,4 +126,4 @@ def chatbotResponse():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='8889', debug=True)
+    app.run(host='18.181.51.55', port='22', debug=True)
