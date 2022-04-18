@@ -13,19 +13,15 @@ import time
 import tensorflow as tf
 import tensorflow_datasets as tfds
 from Transformer import *
-
-#tokenizer 값 불러오기
-
 import pickle
-model_path = 'C:/Users/user/Desktop/web/python-deep-learning-chatbot/'
-with open (model_path + 'tokenizer.pkl', 'rb') as f:
+
+with open ('tokenizer.pkl', 'rb') as f:
   tokenizer = pickle.load(f)
-# 시작 토큰과 종료 토큰에 대한 정수 부여.
+
 START_TOKEN, END_TOKEN = [tokenizer.vocab_size], [tokenizer.vocab_size + 1]
 
-# 시작 토큰과 종료 토큰을 고려하여 단어 집합의 크기를 + 2
+
 VOCAB_SIZE = tokenizer.vocab_size + 2
-####Transformer 모델 생성
 
 # 하이퍼파라미터
 D_MODEL = 256
@@ -45,8 +41,8 @@ model.summary()
 
 
 #모델 불러오기
-path = 'C:/Users/user/Desktop/web/python-deep-learning-chatbot/'
-model.load_weights(path + 'chatbot_transform_model_weights.h5')
+
+model.load_weights('chatbot_transform_model_weights.h5')
 
 
 
