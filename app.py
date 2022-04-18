@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import nltk
 from nltk.stem import WordNetLemmatizer
 import pickle
