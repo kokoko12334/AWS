@@ -15,6 +15,7 @@
 
   </head>
   <body>
+    <img src="C:\Users\user\Desktop\web\python-deep-learning-chatbot\templates\menu.png" alt="No image" width="700" height="400">
     <div class="container">
       <h1>Learning Crew Cafe Chatbot</h1>
       <br>
@@ -37,7 +38,7 @@
         </div>
 
     </div>
-
+   
     <script src="/static/jquery.min.js" ></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -59,7 +60,7 @@
                   question: $("#question").val()
               },
               success: function(result) {
-                $("#response").append("<br>Me: "+$("#question").val()+ "<br> Karabo: "+result.response);
+                $("#response").append("<br>Me: "+$("#question").val()+ "<br> cafe bot: "+result.response);
                 $("#question").val("")
               },
               error: function(result) {
